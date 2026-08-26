@@ -487,7 +487,7 @@
 				display: flex;
 				gap: 16px;
 				align-items: center;
-				margin-bottom: 32px;
+				margin-bottom: 24px;
 				flex-wrap: wrap;
 			}
 			.btn-primary {
@@ -539,6 +539,28 @@
 				border-color: #f97316;
 				color: var(--text);
 				background: rgba(249, 115, 22, 0.05);
+			}
+			.hero-repo {
+				display: inline-flex;
+				align-items: center;
+				gap: 9px;
+				margin-bottom: 28px;
+				font-family: "JetBrains Mono", monospace;
+				font-size: 13px;
+				font-weight: 500;
+				color: var(--muted);
+				text-decoration: none;
+				transition: color 0.2s;
+			}
+			.hero-repo:hover {
+				color: #f97316;
+			}
+			.hero-repo i:first-child {
+				font-size: 15px;
+			}
+			.hero-repo-out {
+				font-size: 10px;
+				opacity: 0.7;
 			}
 			.hero-checks {
 				display: flex;
@@ -1339,6 +1361,19 @@
 							<span data-i18n="heroCtaDemo"></span>
 						</a>
 					</div>
+					<!-- Outbound, so it opens in its own tab and leaves the landing
+					     page where the visitor left it. The repo slug is the label:
+					     it needs no translation and says exactly where the link goes. -->
+					<a
+						class="hero-repo"
+						href="https://github.com/swarmbot-it/swarmbot"
+						target="_blank"
+						rel="noopener"
+					>
+						<i class="fa-brands fa-github"></i>
+						<span>swarmbot-it/swarmbot</span>
+						<i class="fa-solid fa-arrow-up-right-from-square hero-repo-out"></i>
+					</a>
 					<div class="hero-checks">
 						<div class="hero-check">
 							<i class="fa-solid fa-check check-ok"></i>
