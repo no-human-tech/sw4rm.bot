@@ -46,6 +46,6 @@
         "tsx": "^4.19.2",
         "typescript": "~7.0.2",
         "typescript-eslint": "^8.67.0",
-        "vitest": "^4.1.6"
+        "vitest": "^4.1.11"
     }
 }
